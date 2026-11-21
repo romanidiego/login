@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-7 col-sm-6 presentation-container">
+            <h1>Bienvenuto!</h1>
+            <p>Loggati in questo sito dove le password sono visibilissime a chiunque!</p>
+            <h3>Lista di utenti e password</h3>
+            <ul>
+                <li id="user1">Utente 1</li>
+                <li id="user2">Utente 2</li>
+                <li id="user3">Utente 3</li>
+                <li id="user4">Utente 4</li>
+            </ul>
+        </div>
+        <div class="col-md-5 col-sm-6 col-xs-12 login-container">
+            <h1 id="loginTitle">Login</h1>
+            <p id="loginMessage">Please enter your credentials to log in</p>
+            <div>
+                <div class="username">
+                    <p>Username:</p>
+                    <form action="" onsubmit="">
+                        <input type="text" id="username" placeholder="Inserisci il nome utente">
+                    </form>
+                    <p id="usernameCheck"></p>
+                </div>
+                <div class="password">
+                    <div class="pass-login">
+                        <p>Password:</p>
+                        <form action="" onsubmit="">
+                            <input type="password" id="password" placeholder="Inserisci la password">
+                            <i class="bi bi-eye-slash" onclick="mostraPassword()"></i>
+                        </form>
+                    </div>
+                    <div class="pass-registrazione d-none">
+                        <p>Password:</p>
+                        <form action="" onsubmit="">
+                            <input type="password" id="password" placeholder="Inserisci la password" oninput="controlli()">
+                            <i class="bi bi-eye-slash" onclick="mostraPassword()"></i>
+                        </form>
+                        <div class="requisiti">
+                        <p>La password deve:</p>
+                        <ul>
+                            <li id="lunghezza">avere almeno 8 caratteri</li>
+                            <li id="speciale">contenere almeno un carattere speciale (_, . o -)</li>
+                            <li id="nemero">contenere almeno un numero</li>
+                            <li id="maiuscolo">contenere almeno una lettera maiuscola</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <button id="loginButton" class="loginButton" onclick="login()">Login</button>
+                <button class="registrazione" onclick="registrazione()">
+                    <i class="bi bi-download">Non hai un account? Registrati</i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

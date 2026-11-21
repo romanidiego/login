@@ -1,0 +1,48 @@
+.login-container{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+}
+.presentation-container{
+    background-color: #0ce4d6;
+    border-radius: 10px;
+    padding: 20px;
+}
+.registrazione{
+    background-color: #4cede2;
+    border: solid 1px #007aae;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.username{
+    margin-bottom: 20px;
+}
+.password{
+    margin-bottom: 20px;
+}
+.loginButton{
+    background-color: #0ce4d6;
+    border: solid 1px #0ca3e4;
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 10px;
+}
+.invalid{
+    color: red;
+    font-size: 12px;
+}
+.valido{
+    color: greenyellow;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 576px) {
+  .presentation-container{
+    display: none;
+  }
+  .login-container {
+    margin:auto;
+    width: 90%;
+  }
+}
