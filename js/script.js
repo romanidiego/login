@@ -37,6 +37,7 @@ function rendiRegistrazione(){
     document.getElementById("registrazione-switch").classList.add("d-none");
     document.getElementById("loginButton").classList.add("d-none");
     document.getElementById("registrazioneButton").classList.remove("d-none");
+    document.getElementById("requisiti").classList.remove("d-none");
 }
 function rendiLogin(){
     //testi
@@ -47,38 +48,9 @@ function rendiLogin(){
     document.getElementById("registrazione-switch").classList.remove("d-none");
     document.getElementById("loginButton").classList.remove("d-none");
     document.getElementById("registrazioneButton").classList.add("d-none");
+    document.getElementById("requisiti").classList.add("d-none");
 }
 
 /*function controlli(){
-    let user = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
-    if(!username.includes(user)){
-        if((user.length > 0 && pass.length > 0) && (!username.includes(user) && !password.includes(pass))){
-        //controllo che la password contiene almeno un carattere speciale, un numero, una lettera maiuscola e sia lunga almeno 8 caratteri
-        if(!pass.includes("_") || !pass.includes(".") || !pass.includes("-")){
-            document.getElementById("loginButton").innerHTML = "La password non soddisfa i requisiti: ";
-            document.getElementById("speciale").classList.add("invalid");
-        } else {
-            document.getElementById("speciale").classList.add.apply("valido");
-            if(!pass.includes("/[A-Z]/")){
-                document.getElementById("LoginButton").innerHTML = "La password non soddisfa i requisiti: "
-                document.getElementById("maiuscolo").classList.add("invalid");
-            }else{
-                document.getElementById("maiuscolo").classList.add("valido");
-                if(!pass.includes("/\d/")){
-                    document.getElementById("LoginButton").innerHTML = "La password non soddisfa i requisiti: "
-                    document-getElementById("numero").classList.add("invalido");
-                }else{
-                    document.getElementById("numero").classList.add("valido");
-                }
-            }
-        }
-        
-        } else {
-            document.getElementById("registrazioneButton").innerHTML = "Inserisci un nome utente e una password validi";
-        }
-    }else{
-        document.getElementById("registrazioneButton").innerHTML = "nome utente già in uso";
-    }
-    
+
 }*/
