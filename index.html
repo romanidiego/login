@@ -44,26 +44,24 @@
                             <i class="bi bi-eye-slash" onclick="mostraPassword()"></i>
                         </form>
                     </div>
-                    <div class="pass-registrazione d-none">
-                        <p>Password:</p>
-                        <form action="" onsubmit="">
-                            <input type="password" id="password" placeholder="Inserisci la password" oninput="controlli()">
-                            <i class="bi bi-eye-slash" onclick="mostraPassword()"></i>
-                        </form>
+                    <div class="registrazione d-none">
                         <div class="requisiti">
-                        <p>La password deve:</p>
-                        <ul>
-                            <li id="lunghezza">avere almeno 8 caratteri</li>
-                            <li id="speciale">contenere almeno un carattere speciale (_, . o -)</li>
-                            <li id="nemero">contenere almeno un numero</li>
-                            <li id="maiuscolo">contenere almeno una lettera maiuscola</li>
-                        </ul>
-                    </div>
+                            <p>La password deve:</p>
+                            <ul>
+                                <li id="lunghezza">avere almeno 8 caratteri</li>
+                                <li id="speciale">contenere almeno un carattere speciale (_, . o -)</li>
+                                <li id="nemero">contenere almeno un numero</li>
+                                <li id="maiuscolo">contenere almeno una lettera maiuscola</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <button id="loginButton" class="loginButton" onclick="login()">Login</button>
-                <button class="registrazione" onclick="registrazione()">
-                    <i class="bi bi-download">Non hai un account? Registrati</i>
+                <button class="registrazione-switch">
+                    <i class="bi bi-download"> Non hai un account? Registrati</i>
+                </button>
+                <button class="login-switch d-none">
+                    <i class="bi bi-download"> Hai già un account? Accedi</i>
                 </button>
             </div>
         </div>

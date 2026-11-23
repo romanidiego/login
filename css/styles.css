@@ -4,11 +4,18 @@
     padding: 20px;
 }
 .presentation-container{
-    background-color: #0ce4d6;
+    background-image: url("../images/sfondo.jpeg");
     border-radius: 10px;
     padding: 20px;
+    color: white;
 }
-.registrazione{
+.registrazione-switch{
+    background-color: #4cede2;
+    border: solid 1px #007aae;
+    border-radius: 10px;
+    padding: 3px;
+}
+.login{
     background-color: #4cede2;
     border: solid 1px #007aae;
     border-radius: 10px;

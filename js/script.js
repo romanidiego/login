@@ -17,23 +17,20 @@ function login(){
     let user = document.getElementById("username").value;
     let pass = document.getElementById("password").value;
 
-    for (let i = 0; i < username.length; i++) {
-        if (user == username[i] && pass == password[i]) {
+    if(username.includes(user)){
+        const i = username.indexOf(user);
+        if(password[i] == pass){
             document.getElementById("loginButton").innerHTML = "Login successful";
             open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
-            return;
         }
+    }else{
+        document.getElementById("loginButton").innerHTML = "Invalid credentials";
     }
-    document.getElementById("loginButton").innerHTML = "Invalid credentials";
 }
 
-/*function registrazione(){
-    document.getElementById("pass-registrazione").classList.toggle("d-none");
-    document.getElementById("loginTitle").innerHTML = "Registrati";
-    document.getElementById("loginMessage").innerHTML = "Inserisci le tue credenziali per registrarti";
-}
 
-function controlli(){
+
+/*function controlli(){
     let user = document.getElementById("username").value;
     let pass = document.getElementById("password").value;
     if((user.length > 0 && pass.length > 0) && (!username.includes(user) && !password.includes(pass))){
