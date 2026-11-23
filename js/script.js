@@ -49,7 +49,7 @@ function rendiLogin(){
     document.getElementById("registrazioneButton").classList.add("d-none");
 }
 
-function controlli(){
+/*function controlli(){
     let user = document.getElementById("username").value;
     let pass = document.getElementById("password").value;
     if(!username.includes(user)){
@@ -81,4 +81,4 @@ function controlli(){
         document.getElementById("registrazioneButton").innerHTML = "nome utente già in uso";
     }
     
-}
+}*/
