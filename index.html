@@ -26,8 +26,8 @@
             </ul>
         </div>
         <div class="col-md-5 col-sm-6 col-xs-12 login-container">
-            <h1 id="loginTitle">Login</h1>
-            <p id="loginMessage">Please enter your credentials to log in</p>
+            <h1 id="Title">Accedi</h1>
+            <p id="Message">Inserisci le tue credenziali per accedere</p>
             <div>
                 <div class="username">
                     <p>Username:</p>
@@ -44,8 +44,7 @@
                             <i class="bi bi-eye-slash" onclick="mostraPassword()"></i>
                         </form>
                     </div>
-                    <div class="registrazione d-none">
-                        <div class="requisiti">
+                        <div class="requisiti d-none">
                             <p>La password deve:</p>
                             <ul>
                                 <li id="lunghezza">avere almeno 8 caratteri</li>
@@ -54,13 +53,13 @@
                                 <li id="maiuscolo">contenere almeno una lettera maiuscola</li>
                             </ul>
                         </div>
-                    </div>
                 </div>
                 <button id="loginButton" class="loginButton" onclick="login()">Login</button>
-                <button class="registrazione-switch">
+                <button id="registrazioneButton" class="loginButton d-none" onclick="Controlli()">Registrati</button>
+                <button class="registrazione-switch" id="registrazione-switch" onclick="rendiRegistrazione()">
                     <i class="bi bi-download"> Non hai un account? Registrati</i>
                 </button>
-                <button class="login-switch d-none">
+                <button class="login-switch d-none" id="login-switch" onclick="rendiLogin()">
                     <i class="bi bi-download"> Hai già un account? Accedi</i>
                 </button>
             </div>
